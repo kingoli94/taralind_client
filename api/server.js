@@ -4,22 +4,18 @@ var compression = require('compression');
 var helmet = require('helmet');
 const app = express();
 const httpInstance = require("./http/http");
-const mock = require("./http/mock");
-const cors = require("cors");
 
 const PORT = 5001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(compression());
 app.use(helmet())
-app.use(cors({ origin: "http://localhost:3000" })); // testing
 const http = httpInstance.initiateAxios();
 
 app.get('/api/firstvisit', async (req, res) => {
   try{
-    //const response = await http.get('/taralind/survey/firstvisit');
-    //res.send(response.data);
-    res.send(mock.mock.firstVisit);
+    const response = await http.get('/taralind/survey/firstvisit');
+    res.send(response.data);
   }catch(error){
     res.status(400).send('Error while fetching survey');
   }
