@@ -1,0 +1,16 @@
+.sv_page_title {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+.header-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  vertical-align: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

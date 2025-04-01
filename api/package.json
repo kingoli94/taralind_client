@@ -1,0 +1,36 @@
+{
+  "name": "taralind.api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olafurmar/taralind.api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olafurmar/taralind.api/issues"
+  },
+  "homepage": "https://github.com/olafurmar/taralind.api#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^4.6.0",
+    "https": "^1.0.0",
+    "nodemon": "^2.0.12",
+    "pino": "^6.13.0",
+    "pino-http": "^5.6.0",
+    "pino-pretty": "^5.1.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
